@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            
+        }
+    </style>
+</head>
+
+<body style="background: #414141; color: aliceblue;" id="body">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="images">
+            <li><img src="1.jpg" alt="korean girl" width="200px" id="korean"></li>
+            <li><img src="2.jpg" alt="siting girl" width="200px" id="sitingblue"></li>
+            <li><img src="4.jpg" alt="siting girl with sexy position" width="200px" id="sitingred"></li>
+            <li><img src="5.jpg" alt="standing girl with sexy position" width="200px" id="sea"></li>
+            <li><img src="6.jpg" alt="anjali arora position" width="200px" id="anjblack"></li>
+            <li><img src="anjali-arora.jpg" alt="anjali arora " width="200px" id="anjdance"></li>
+            <li><a href="http://goolge.com" id="google" target="_self" style="color: white;">Google</a></li>
+        </ul>
+    </div>
+    <script>
+        //atachEvenetListerner
+        //jQuery=on
+
+        // document.getElementById('anjblack').onmouseenter = function () {
+        //     alert('Clicked')
+        // }
+        // type,timestamp,defaultPrevented
+        //target, toElement,srcElement,currentTarget,
+        //ClientX,clientY,screenx,screenY
+        //altkey,cntrkey,shiftKey,keyCode
+
+        // document.getElementById('images').addEventListener('click', function (e) {
+        //     // alert('clicked Again')
+        //     console.log(" All Image are clicked");
+        // }, false)
+
+        // document.getElementById('korean').addEventListener('click', function (e) {
+        //     // alert('clicked Again')
+        //     console.log("Korean girl image clicked");
+        //     e.stopPropagation();
+        // }, false)
+
+        // document.getElementById('google').addEventListener('click', function (e) {
+        //     e.preventDefault()
+        //     e.stopPropagation();
+        //     console.log(("Goole Clicked"));
+        // }, false)
+
+        const image = document.querySelector('#images').addEventListener('click', function (e) {
+            // console.log(e.target.parentNode);
+            console.log(e.target.tagName);
+            // used rempve by click the spcific image
+            if (e.target.tagName === 'IMG') {
+                console.log(e.target.id +" is removed");
+                let removeIt = e.target.parentNode;
+                removeIt.remove()
+            }
+
+
+
+
+            //used the remove if cclick the li the remove all
+            // let removeIt = e.target.parentNode;
+            // removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt);
+        })
+
+    </script>
+</body>
+
+</html>

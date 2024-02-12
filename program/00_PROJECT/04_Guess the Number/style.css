@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(115, 115, 193);
+    /* height: 100000px; */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #b5b2b2;
+    width: 100%;
+    padding: 5px;
+    z-index: 1000;
+}
+
+nav .border {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px 7px;
+    text-decoration: none;
+    color: #ffefef;
+    background: #777;
+    margin: 0 5px;
+}
+
+#sn {
+    color: white;
+    font-weight: 900;
+    background: #000;
+    font-size: 20px;
+    z-index: 10;
+}
+
+p {
+    color: white;
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+#guessField {
+    height: 30px;
+    background: rgb(255, 255, 255);
+    width: 200px;
+    margin: 20px;
+    border-radius: 2px;
+    border: 2px solid #121212;
+    color: green;
+}
+#subt{
+    height: 30px;
+    color: white;
+    background: #000;
+    border: none;
+    border-radius: 7px;
+    padding: 3px 53px;
+    font-size:20px
+}
+
+label {
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+input {
+    background: transparent;
+    border: transparent;
+    color: white;
+    margin: 10px;
+    float: center;
+}

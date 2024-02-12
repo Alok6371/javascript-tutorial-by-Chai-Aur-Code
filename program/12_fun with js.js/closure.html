@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="#313131" style="color: blue; padding: 40px; margin: 10px;">
+    <button id="or" style="padding: 20px;">Orange</button>
+    <button id="gr" style=" padding: 20px;margin: 0 0 0 20px;">Green</button>
+</body>
+<script>
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+</script>
+<script>
+    //  document.getElementById('or').onclick=function(){
+    //         document.body.style.backgroundColor="orange"
+    //     }
+    //     document.getElementById('gr').onclick=function(){
+    //         document.body.style.backgroundColor="green"
+    //     }
+
+
+    function clickhandler(color) {
+        return  function() {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('or').onclick = clickhandler("orange")
+    document.getElementById('gr').onclick = clickhandler("green")
+</script>
+
+</html>

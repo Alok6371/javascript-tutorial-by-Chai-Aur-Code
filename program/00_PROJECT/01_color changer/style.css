@@ -1,0 +1,72 @@
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        nav {
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            background: #202020;
+            width: 100%;
+            padding: 5px;
+        }
+
+        nav .border {
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 2px 7px;
+            text-decoration: none;
+            color: #ffefef;
+            background: #777;
+            margin: 0 5px;
+        }
+
+        #bg_color {
+            background: 
+            #202020;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            
+        }
+
+        .canvas {
+            width: 100%
+        }
+
+        .button {
+            border: 2px solid black;
+            height: 100px;
+            box-shadow: 20px rgba(3px, 12px, 123px, 0.23);
+            width: 100px;
+            position: static;
+            margin: 10px;
+            display: inline-block;
+            color: white;
+        }
+
+        #grey {
+            background: rgb(171, 43, 43);
+        }
+
+        #white {
+            background: rgb(255, 255, 255);
+
+        }
+
+        #pink {
+            background: rgb(255, 0, 225);
+            /* float: right; */
+
+        }
+
+        #green {
+            background: rgb(0, 255, 17);
+        }
+
+        #blue {
+            background: rgb(0, 38, 255);
+        }

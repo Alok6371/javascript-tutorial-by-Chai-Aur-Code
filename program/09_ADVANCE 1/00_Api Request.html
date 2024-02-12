@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+</head>
+
+<body style="background-color: aqua;">
+    <p> 0 <b> UNSENT</b> Client has been created. open() not called yet.
+    <p> 1 <b>OPENED</b> open() has been called.
+    <p>2 <b>HEADERS_RECEIVED</b> send() has been called, and headers and status are available.
+    <p> 3<b>LOADING</b> Downloading; responseText holds partial data.
+    <p> 4 <b>DONE</b> The operation is complete.
+
+        <script>
+            const requestUrl = 'https://api.github.com/users/Alok6371'
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', requestUrl)
+            console.log(xhr.readyState);
+
+            xhr.onreadystatechange = function () { 
+                // console.log(xhr.readyState);
+                if (xhr.readyState == 4) {
+                    // console.log(this.responseText);
+
+                    const data = JSON.parse(this.responseText) ////make from string to object
+                    console.log(data);
+                    console.log(typeof data);
+
+                    // const data2 = new Object
+                    // console.log(typeof data2);
+
+                    // take data from github
+                    console.log(data.followers);
+                    console.log(data.login);
+
+                    //print on the screen
+                    document.write(data.following)
+
+
+                }
+            }
+            xhr.send()
+        </script>
+</body>
+
+</html>

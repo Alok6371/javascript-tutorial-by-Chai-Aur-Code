@@ -1,0 +1,9 @@
+# PROJECT RELATETED TO DOM
+## PROJRCT LINK
+[CLICK HERE](01_BASICS)
+
+# SOLUTION CODE
+### PROJECT 1
+```JAVASCRIPT 
+    console.log("Alok")
+```  

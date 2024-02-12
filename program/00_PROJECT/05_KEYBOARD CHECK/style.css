@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+
+}
+
+nav {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    background: #202020;
+    width: 100%;
+    padding: 5px;
+}
+
+nav .border {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2px 7px;
+    text-decoration: none;
+    color: #ffefef;
+    background: #777;
+    margin: 0 5px;
+}
+
+
+th,
+td {
+    border: 2px solid black;
+}
+
+.project {
+    background: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 100vh;
+}
+.color{
+    color: aqua;
+    display: flex;
+    flex-direction: row;
+}
